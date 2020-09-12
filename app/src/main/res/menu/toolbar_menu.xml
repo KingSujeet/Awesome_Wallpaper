@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item xmlns:n1="http://schemas.android.com/apk/res/android"
+        xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/whatsapp"
+        n1:icon="@drawable/whatsapp"
+        n1:title="Go to WA"
+    n2:showAsAction="always"/>
+
+    <item xmlns:n3="http://schemas.android.com/apk/res/android"
+        xmlns:n4="http://schemas.android.com/apk/res-auto"
+        n3:id="@+id/share"
+        n3:icon="@drawable/ic__share"
+        n3:title="Share this App"
+        n4:showAsAction="always"/>
+</menu>

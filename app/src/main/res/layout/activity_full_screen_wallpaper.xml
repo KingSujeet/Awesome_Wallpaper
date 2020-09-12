@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".FullScreenWallpaperActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:tooltipText="Downloading Image.."
+        android:indeterminateTint="#ffffff"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloading Image..."
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progressBar2"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/photo_view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET WALLPAPER"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="#D8D6D6"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/btnSetWallpaper"
+        android:layout_alignParentBottom="true"
+        android:onClick="SetWallPaper"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        fab:fab_addButtonColorNormal="#ffffff"
+        fab:fab_addButtonColorPressed="#DDD6D6"
+        fab:fab_addButtonSize="normal"
+        fab:fab_addButtonPlusIconColor="#222121"
+        fab:fab_expandDirection="up"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="16dp">
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#000000"
+            android:onClick="shareImageToWhatsapp"
+            app:fab_icon="@drawable/whatsapp"
+            fab:fab_colorPressed="#DDD6D6"
+            fab:fab_size="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share to WhatsApp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#000000"
+            fab:fab_size="normal"
+            android:onClick="saveToGallery"
+            app:fab_icon="@drawable/ic_baseline_save_24"
+            fab:fab_colorPressed="#DDD6D6"
+            fab:fab_title="Click to remove"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save to Gallery"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

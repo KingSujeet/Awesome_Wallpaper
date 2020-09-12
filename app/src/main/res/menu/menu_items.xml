@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item xmlns:n1="http://schemas.android.com/apk/res/android"
+        xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/whatsapp"
+        n1:icon="@drawable/ic_baseline_person_pin_24"
+        n1:title="About Developer"
+        n2:showAsAction="always"/>
+
+    <item xmlns:n3="http://schemas.android.com/apk/res/android"
+        xmlns:n4="http://schemas.android.com/apk/res-auto"
+        n3:id="@+id/share"
+        n3:icon="@drawable/ic_baseline_insert_link_24"
+        n3:title="Connect with me on Linkedin"
+        n4:showAsAction="always"/>
+</menu>
